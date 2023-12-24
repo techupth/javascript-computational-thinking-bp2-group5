@@ -82,3 +82,10 @@ let orders = [
 ];
 
 // Start coding here
+let totalAmount=0
+  for (let order of orders){
+    
+    totalAmount=totalAmount+order.productPrice*order.productQuantity
+  }  
+ 
+  console.log(totalAmount)
