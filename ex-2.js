@@ -82,3 +82,13 @@ let orders = [
 ];
 
 // Start coding here
+let totalJcb=0
+for (let order of orders) {
+  if(order.creditCardType==="jcb"){
+  totalJcb=totalJcb+order.productPrice*order.productQuantity
+  }
+
+}
+
+console.log(totalJcb)
+
