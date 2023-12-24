@@ -82,3 +82,11 @@ let orders = [
 ];
 
 // Start coding here
+let totalBirdie=0
+for(let order of orders){
+  if (order.customerName==="Birdie Shepland") {
+    totalBirdie+=order.productPrice*order.productQuantity
+
+  }
+}
+console.log(totalBirdie)

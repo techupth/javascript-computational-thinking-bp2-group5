@@ -82,3 +82,16 @@ let orders = [
 ];
 
 // Start coding here
+let mostExpensiveOrder=''
+let id =0
+let totalAmountOrder=0
+for (let order of orders) {
+  if (mostExpensiveOrder<order.productPrice*order.productQuantity){
+  mostExpensiveOrder=order.productPrice*order.productQuantity
+  id=order.id 
+  totalAmountOrder=order.productPrice*order.productQuantity
+  } 
+}
+
+console.log(totalAmountOrder)
+
